@@ -9,7 +9,7 @@ import Cost from './components/Sections/Cost/Cost.jsx'
 
 function App() {
   return (
-    <BrowserRouter>  {/* Это запускает маршрутизацию */}
+    <BrowserRouter basename="/aluminum_structures_static">  {/* Это запускает маршрутизацию */}
       <Routes> {/* Это группирует маршруты */}
         <Route path="/" element={<HomePage />} />  {/* Это определяет маршрут */}
         <Route path="/door" element={<Door />} /> {/* Это определяет маршрут */}
