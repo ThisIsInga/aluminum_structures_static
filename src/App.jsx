@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>  {/* Это запускает маршрутизацию */}
       <Routes> {/* Это группирует маршруты */}
         <Route path="/" element={<HomePage />} />  {/* Это определяет маршрут */}
-        <Route path="/door" element={<Door />} />
+        <Route path="/door" element={<Door />} /> {/* Это определяет маршрут */}
         <Route path="/window" element={<Window />} />
         <Route path="/stainedglasses" element={<StainedGlasses />} />
         <Route path="/cost" element={<Cost />} />
