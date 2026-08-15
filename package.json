@@ -1,7 +1,8 @@
 {
-  "name": "aliminum_structures-frontend",
+  "name": "aluminum_structures-frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://thisisinga.github.io/aluminum_structures_static/",
   "type": "module",
   "scripts": {
     "dev": "vite",
