@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@400;500;600;700&display=swap');
+
+.services {
+  background:  rgb(240, 240, 240);
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 2%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Zalando Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: "Zalando Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.objects {
+  font-family: "Zalando Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.object {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid rgba(58, 58, 184, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.object::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgb(49, 83, 134);
+}
+
+.object:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  border: 2px solid rgb(53, 53, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.objectTitle {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgb(49, 83, 134);
+  margin-bottom: 1rem;
+}
+
+.objectDescription {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.object {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.object:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.object:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@media (max-width: 1024px) {
+  .objects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .objects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .object {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10% 5%;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .object {
+    padding: 1.5rem 1rem;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .objectTitle {
+    font-size: 1.3rem;
+  }
+}

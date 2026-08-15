@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #e01111, #c21a1a);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(224, 17, 17, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Zalando Sans", sans-serif;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #c21a1a, #e01111);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(224, 17, 17, 0.4);
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .button {
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}

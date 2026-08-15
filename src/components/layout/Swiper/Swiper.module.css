@@ -1,0 +1,28 @@
+.swiperContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 250px; 
+  height: 375px;
+  padding: 5%;
+  object-fit: cover; 
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.image:hover {
+  transform: scale(1.05);
+}

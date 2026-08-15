@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@600&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mainHighlights li {
+  font-family: "Zalando Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  position: relative;
+  bottom: 20px;
+}
+
+.mainHighlights li:nth-child(n + 2) {
+  padding-top: 7%;
+}
+
+.mainHighlights li::before {
+  content: '▶';
+  color: rgb(48, 81, 131);
+  font-size: 30px;
+  margin-right: 3%;
+}
+
+.additinalHighlights {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  align-items: center;
+}
+
+.additinalHighlights img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  object-fit: cover;
+}
+
+.additinalHighlights p::before {
+  content: 'Более';
+  font-family: "Zalando Sans", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  bottom: 125px;
+  left: 6%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(85, 84, 84);
+  opacity: 0.8;
+}
+
+.additinalHighlights p {
+  font-family: "Zalando Sans";
+  font-weight: 600;
+  margin-top: 7%;
+  font-size: 100px;
+  letter-spacing: 3px;
+  color: rgb(48, 81, 131);
+  padding-bottom: 5%;
+  border-bottom: 5px solid rgb(53, 108, 192) ;
+  text-align: center;
+}
+
+.additinalHighlightsText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.additinalHighlightsText span {
+  font-family: "Zalando Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: rgb(15, 15, 15);
+}
+
+@media (max-width: 960px) {
+  .additinalHighlights img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+  
+  .additinalHighlights {
+    width: 80%;
+  }
+  
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .additinalHighlights p {
+    font-size: 80px;
+  }
+  
+  .additinalHighlights p::before {
+    bottom: 110px; 
+    left: 13%;
+    font-size: 18px;
+  }
+  
+  .additinalHighlightsText span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .additinalHighlights img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .additinalHighlights {
+    width: 100%;
+  }
+  
+  .mainHighlights li {
+    font-size: 16px;
+  }
+  
+  .additinalHighlights p {
+    font-size: 60px;
+  }
+  
+  .additinalHighlights p::before {
+    bottom: 80px;
+    font-size: 16px;
+  }
+  
+  .additinalHighlightsText span {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+}

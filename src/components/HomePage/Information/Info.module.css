@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@600&display=swap');
+
+.container {
+    background-color: rgb(240, 240, 240);
+}
+
+.info {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    padding: 5%;
+}
+
+.shortInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+.shortInfo p{
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 10%;
+}
+
+.shortInfo h2{
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    background: linear-gradient(to right, rgb(0, 0, 0), blue);  /* Градиент от белого к синему слева направо */
+    -webkit-background-clip: text;  /* Обрезает фон по форме текста (WebKit-браузеры) */
+    -webkit-text-fill-color: transparent;  /* Делает обычный цвет текста прозрачным */
+    background-clip: text;  /* Стандартный вариант для других браузеров */
+    color: transparent;  /* Прозрачный цвет текста для совместимости */
+}
+
+.longInfo {
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    border: 5px solid rgb(82, 91, 211);
+    border-radius: 8px;
+    padding: 5%;
+    background-color: white;
+    flex: 1;
+}
+
+.longInfo p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .shortInfo p {
+        font-size: 28px;
+        padding-bottom: 8%;
+    }
+    .shortInfo h2 {
+        font-size: 40px;
+        letter-spacing: 1.2px;
+    }
+}
+
+@media (max-width: 768px){
+    .info{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .shortInfo {
+        padding-right: 0; /* Убираем правый отступ на мобильных, так как layout стал вертикальным */
+    }
+
+    .longInfo{
+        margin-top: 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    .shortInfo p {
+        font-size: 24px;
+        padding-bottom: 6%;
+    }
+    .shortInfo h2 {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 360px) {
+    .shortInfo p{
+        font-size: 20px;
+    }
+    .shortInfo h2{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}

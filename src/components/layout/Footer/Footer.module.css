@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@600&display=swap');
+
+.companyTitle{
+    color: #ffffff;
+}
+
+.companyDescription{
+    color: #ffffff;
+}
+
+.navList li{
+    color: #ffffff;
+}
+
+.secondaryInfo p{
+    color: #ffffff;
+}
+
+.container{
+    display: 'flex';
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 83, 134);
+    padding-bottom: 2%;
+}
+
+.mainInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4% 0 4% 0;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.companyInfo h2 {
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.companyInfo p {
+    margin-top: 3%;
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.linksContainer ul {
+    display: flex; /* Делает элементы в строку */
+    flex-wrap: wrap; /* Позволяет элементам переходить на новую строку, если места не хватает */
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    gap: 15px; /* Пробел между элементами для красивого вида */
+    list-style-type: none; /* Убирает маркеры списка */
+    padding: 0; /* Убирает стандартный padding */
+    margin: 0; /* Убирает стандартный margin */
+}
+
+.navItem {
+    padding: 10px 20px; /* Добавляет подложку для "крутого" вида */
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон, чтобы вписывался в тему */
+    border-radius: 8px; /* Закругленные углы для современного стиля */
+    font-family: "Zalando Sans", sans-serif; /* Используем ваш шрифт */
+    font-weight: 500; /* Средний вес для выделения */
+    text-decoration: none; /* Убираем подчеркивание для ссылок */
+    color: inherit; /* Наследуем цвет текста из родителя (белый) */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Анимация при наведении */
+    cursor: pointer; /* Показывает, что элемент кликабельный */
+}
+
+.navItem:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Изменение цвета при наведении */
+    transform: scale(1.05); /* Немного увеличивает элемент для эффекта */
+}
+
+.navItem a {
+    color: inherit; /* Наследуем цвет для ссылок внутри li */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.secondaryInfo{
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 400;
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+/* Адаптивность: для экранов меньше 768px список перестраивается в столбик */
+@media (max-width: 768px) {
+    .linksContainer ul {
+        flex-direction: column; /* Переход в вертикальный режим */
+        align-items: center; /* Центрируем элементы */
+        gap: 10px; /* Меньший пробел на мобильных */
+    }
+    
+    .navItem {
+        width: 80%; /* Делаем элементы шире, чтобы лучше подходили под мобильный экран */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .secondaryInfo{
+        font-size: 14px;
+        margin-right: 2%;
+    }
+}
+
+/* Для очень маленьких экранов (например, смартфоны) */
+@media (max-width: 480px) {
+    .companyInfo h2 {
+        font-size: 30px;
+    }
+
+    .companyInfo p {
+        font-size: 15px;
+    } 
+
+    .mainInfo {
+        flex-direction: column; /* Если нужно, весь .mainInfo может стать вертикальным */
+        text-align: center;
+    }
+    
+    .linksContainer ul {
+        margin-top: 5%;
+        gap: 10px; /* Ещё меньший пробел */
+    }
+
+    .secondaryInfo{
+        text-align: center;
+        font-size: 10px;
+    }
+}

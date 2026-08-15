@@ -1,0 +1,86 @@
+.primary{
+    max-width: 1250px;
+    margin: 0 auto; 
+    background-image: url('./../../assets/primary/primary_builder.jpg');
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15%;
+    gap: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.title{
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.title h2{
+    color: #ffffff;
+}
+
+.description {
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    color: #ebebeb;
+}
+
+.description p{
+    color: #ffffff;
+}
+
+.description span{
+    color: #ffffff;
+}
+
+.word a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.word {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.word:hover {
+    color: rgb(47, 112, 211); 
+}
+
+.primaryButton {
+    font-family: "Zalando Sans", sans-serif;
+    font-size: 23px;
+    padding: 2%;
+    width: 40%;
+    color: white;
+    border-radius: 4%;
+    transition: background-color 0.3s;
+    background-color: rgb(56, 95, 153);
+    /* Добавляем эти свойства для Link как кнопки */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.primaryButton:hover {
+    color: rgb(211, 210, 210);
+    background-color: rgb(48, 81, 131);
+}
+
+@media (max-width: 360px) {
+    .title {
+        font-size: 25px;
+    }
+    .primaryButton {
+        width: 50%;
+    }
+}
